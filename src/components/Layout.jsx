@@ -17,12 +17,13 @@ const navigation = [
     links: [
       { title: 'Getting started', href: '/' },
       { title: 'Installation', href: '/docs/installation' },
+      { title: 'Configuration', href: '/docs/configuration' },
     ],
   },
   {
     title: 'Core concepts',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
+      { title: 'Understanding the API', href: '/docs/understanding-api' },
       {
         title: 'Predicting user behavior',
         href: '/docs/predicting-user-behavior',

@@ -47,6 +47,8 @@ sudo pacman -S docker docker-compose
 
 The config file is a YAML file that contains all the configuration required to run WhatsAPI. You can find the sample config file [here](https://config.whatsapi.net/). You can download the file and edit it as per your requirements. You can also use the [WhatsAPI Config Generator](https://config.whatsapi.net/) to generate the config file.
 
+You might not have to change the `database` section of the config file. You can leave it as it is. However, you will have to change the `credentials` section. You can get your API credentials from the [WhatsAPI Dashboard](https://dashboard.whatsapi.net/).
+
 ### Running WhatsAPI
 
 You can run WhatsAPI using the following command.

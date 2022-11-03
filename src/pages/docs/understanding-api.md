@@ -1,5 +1,5 @@
 ---
-title: Understanding API
+title: Understanding basics
 description: Understanding the WhatsAPI API
 ---
 
@@ -23,8 +23,45 @@ Each instance is associated with a unique `instance_key`. You can use this `inst
 
 ### Creating an instance
 
-To create an instance, you need to send a `POST` request to the `/api/instances/create` endpoint. 
+To create an instance, you need to send a `POST` request to the below endpoint. 
+
+```http
+/api/instances/create
+```
 
 You can include a `instance_key` in the query parameters. If you don't include a `instance_key`, the API will generate a random `instance_key` for you.
- 
 
+### Getting a QR Code
+
+To get a QR code, you need to send a `GET` request to the following endpoint.
+
+```
+/api/instances/:instance_key/qrcode
+```
+This endpoint will return a base64 encoded image.
+You can include the base64 encoded image in an `img` tag to display the QR code.
+
+Example:
+
+```html
+<img src="{qr_code}" />
+```
+ 
+### Sending a message
+
+To send a message, you need to send a `POST` request to the following endpoint.
+
+```
+/api/instances/:instance_key/send-message
+```
+
+Replace `:instance_key` with the `instance_key` of the instance you want to send the message from.
+
+Here is the sample body
+
+```json
+{
+  "to": "919999999999",
+  "message": "Hello World"
+}
+```

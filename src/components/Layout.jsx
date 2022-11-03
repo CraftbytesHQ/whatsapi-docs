@@ -23,7 +23,7 @@ const navigation = [
   {
     title: 'Core concepts',
     links: [
-      { title: 'Understanding the API', href: '/docs/understanding-api' },
+      { title: 'Understanding basics', href: '/docs/understanding-api' },
       {
         title: 'Predicting user behavior',
         href: '/docs/predicting-user-behavior',

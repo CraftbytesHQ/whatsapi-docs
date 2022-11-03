@@ -1,7 +1,7 @@
 ---
 title: Getting started
-pageTitle: CacheAdvance - Never miss the cache again.
-description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+pageTitle: WhatsAPI - The ultimate WhatsApp API solution
+description: The only WhatsApp API solution you will need. Send and receive messages, create groups, check for new messages, and more.
 ---
 
 Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}

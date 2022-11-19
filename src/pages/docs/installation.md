@@ -54,7 +54,7 @@ You might not have to change the `database` section of the config file. You can 
 You can run WhatsAPI using the following command.
 
 ```bash
-docker run --name whatsapi -p 8080:8080 -v /path/to/config.yml:/app/config.yml manjit/whatsapi
+docker run --name whatsapi -p 8080:8080 -v /path/to/config.yaml:/app/config.yaml manjit/whatsapi
 ```
 
 This will start the WhatsAPI container and expose the API on port 8080. You can now access the API using the following URL.
@@ -75,7 +75,7 @@ That's it. Your system is now setup with the following components.
 You can run WhatsAPI in the background using the following command.
 
 ```bash
-docker run --name whatsapi -d -p 8080:8080 -v /path/to/config.yml:/app/config.yml manjit/whatsapi
+docker run --name whatsapi -d -p 8080:8080 -v /path/to/config.yaml:/app/config.yaml manjit/whatsapi
 ```
 
 #### Auto restart
@@ -83,7 +83,7 @@ docker run --name whatsapi -d -p 8080:8080 -v /path/to/config.yml:/app/config.ym
 You can also use the following command to run the WhatsAPI container in the background and restart it automatically on system restart.
 
 ```bash
-docker run --name whatsapi -d --restart=always -p 8080:8080 -v /path/to/config.yml:/app/config.yml manjit/whatsapi
+docker run --name whatsapi -d --restart=always -p 8080:8080 -v /path/to/config.yaml:/app/config.yaml manjit/whatsapi
 ```
 
 ### Updating WhatsAPI

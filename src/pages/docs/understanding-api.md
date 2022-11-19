@@ -47,6 +47,23 @@ Example:
 <img src="{qr_code}" />
 ```
  
+ ### Formatting numbers
+
+The API expects the phone number to be in the following format:
+
+```
+{country_code}{phone_number}
+```
+
+Example:
+
+```
+918788889688
+```
+
+Do not include the `+` sign in the phone number.
+
+
 ### Sending a message
 
 To send a message, you need to send a `POST` request to the following endpoint.

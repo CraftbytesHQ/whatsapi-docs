@@ -25,8 +25,8 @@ const navigation = [
     links: [
       { title: 'Understanding basics', href: '/docs/understanding-api' },
       {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
+        title: 'Sending Messages',
+        href: '/docs/sending-messages',
       },
       { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
       {
